@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Sidenav from "./components/Sidenav";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,13 +12,32 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="pace-running">
+        {/* Scripts from /public */}
+        <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
+        <Script src="/app-assets/vendors/js/charts/apexcharts.min.js" strategy="beforeInteractive" />
+        <Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="beforeInteractive" />
+        <Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
+        <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
+        <Script src="/app-assets/js/scripts/pages/dashboard-ecommerce.js" strategy="afterInteractive" />
+        <Script id="feather-init" strategy="afterInteractive">
+          {`
+            window.addEventListener('load', function () {
+              if (window.feather) {
+                window.feather.replace({ width: 14, height: 14 });
+              }
+            });
+          `}
+        </Script>
+        <Header />
+        <Sidenav />
         {children}
+        <Footer />
       </body>
     </html>
   );
