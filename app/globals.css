@@ -2,6 +2,11 @@
 @import '../public/app-assets/vendors/css/vendors-rtl.min.css';
 @import '../public/app-assets/vendors/css/charts/apexcharts.css';
 @import '../public/app-assets/vendors/css/extensions/toastr.min.css';
+@import '../public/app-assets/vendors/css/forms/select/select2.min.css';
+/* @import '../public/app-assets/vendors/css/editors/quill/katex.min.css'; */
+@import '../public/app-assets/vendors/css/editors/quill/monokai-sublime.min.css';
+@import '../public/app-assets/vendors/css/editors/quill/quill.snow.css';
+@import '../public/app-assets/vendors/css/forms/wizard/bs-stepper.min.css';
 
 /* Theme css  */
 @import '../public/app-assets/css/bootstrap.css';
@@ -39,6 +44,7 @@
 @import '../public/app-assets/css/pages/app-invoice-print.css';
 @import '../public/app-assets/css/pages/app-invoice-print.min.css';
 @import '../public/app-assets/css/pages/app-file-manager.css';
+@import '../public/app-assets/css/pages/page-blog.css';
 @import '../public/app-assets/css/pages/app-file-manager.min.css';
 @import '../public/app-assets/css/pages/app-ecommerce.css';
 @import '../public/app-assets/css/pages/app-ecommerce-details.css';
@@ -46,6 +52,15 @@
 @import '../public/app-assets/css/plugins/forms/pickers/form-pickadate.css';
 @import '../public/app-assets/css/plugins/forms/form-wizard.css';
 @import '../public/app-assets/css/plugins/forms/form-validation.css';
+@import '../public/app-assets/css/plugins/forms/form-quill-editor.css';
+@import '../public/app-assets/css/pages/page-profile.css';
+@import '../public/app-assets/css/pages/page-faq.css';
+@import '../public/app-assets/css/pages/page-knowledge-base.css';
+@import '../public/app-assets/css/pages/page-pricing.css';
+@import '../public/app-assets/css/pages/authentication.css';
+@import '../public/app-assets/css/pages/modal-create-app.css';
+
+
 
 
 
