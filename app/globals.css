@@ -3,10 +3,22 @@
 @import '../public/app-assets/vendors/css/charts/apexcharts.css';
 @import '../public/app-assets/vendors/css/extensions/toastr.min.css';
 @import '../public/app-assets/vendors/css/forms/select/select2.min.css';
-/* @import '../public/app-assets/vendors/css/editors/quill/katex.min.css'; */
 @import '../public/app-assets/vendors/css/editors/quill/monokai-sublime.min.css';
 @import '../public/app-assets/vendors/css/editors/quill/quill.snow.css';
 @import '../public/app-assets/vendors/css/forms/wizard/bs-stepper.min.css';
+@import '../public/app-assets/vendors/css/extensions/jquery.rateyo.min.css';
+@import '../public/app-assets/vendors/css/charts/apexcharts.css';
+@import '../public/app-assets/vendors/css/extensions/nouislider.min.css';
+@import '../public/app-assets/vendors/css/extensions/swiper.min.css';
+@import '../public/app-assets/fonts/font-awesome/css/font-awesome.min.css';
+@import '../public/app-assets/fonts/font-awesome/css/font-awesome.css';
+@import '../public/app-assets/vendors/css/file-uploaders/dropzone.min.css';
+@import '../public/app-assets/vendors/css/file-uploaders/dropzone.min.css';
+@import '../public/app-assets/vendors/css/file-uploaders/dropzone.min.css';
+@import '../public/app-assets/vendors/css/editors/quill/quill.bubble.css';
+@import '../public/app-assets/vendors/css/pickers/pickadate/pickadate.css';
+@import '../public/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css';
+
 
 /* Theme css  */
 @import '../public/app-assets/css/bootstrap.css';
@@ -26,6 +38,7 @@
 @import '../public/app-assets/css/plugins/extensions/ext-component-toastr.css';
 @import '../public/app-assets/css/plugins/extensions/ext-component-sliders.css';
 @import '../public/app-assets/css/plugins/extensions/ext-component-sweet-alerts.css';
+@import '../public/app-assets/css/plugins/extensions/ext-component-toastr.css';
 @import '../public/app-assets/css/pages/app-email.min.css';
 @import '../public/app-assets/css/pages/app-email.css';
 @import '../public/app-assets/css/pages/app-chat.css';
@@ -59,6 +72,21 @@
 @import '../public/app-assets/css/pages/page-pricing.css';
 @import '../public/app-assets/css/pages/authentication.css';
 @import '../public/app-assets/css/pages/modal-create-app.css';
+@import '../public/app-assets/css/pages/ui-feather.css';
+@import '../public/app-assets/css/pages/app-chat-list.css';
+@import '../public/app-assets/css/plugins/charts/chart-apex.css';
+@import '../public/app-assets/css/core/colors/palette-noui.css';
+@import '../public/app-assets/css/plugins/extensions/ext-component-sliders.css';
+@import '../public/app-assets/css/plugins/extensions/ext-component-drag-drop.css';
+@import '../public/app-assets/css/plugins/extensions/ext-component-tour.css';
+@import '../public/app-assets/css/plugins/extensions/ext-component-media-player.css';
+@import '../public/app-assets/css/plugins/extensions/ext-component-swiper.css';
+@import '../public/app-assets/css/plugins/extensions/ext-component-ratings.css';
+@import '../public/app-assets/css/plugins/forms/form-file-uploader.css';
+@import '../public/app-assets/css/plugins/forms/pickers/form-flat-pickr.css';
+@import '../public/app-assets/css/plugins/forms/pickers/form-pickadate.css';
+
+
 
 
 

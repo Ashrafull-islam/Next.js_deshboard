@@ -1,0 +1,677 @@
+"use client";
+
+import Script from "next/script";
+
+export default function page() {
+  return (
+    <>
+      {/* BEGIN: Vendor JS */}
+      <Script
+        src="/app-assets/vendors/js/vendors.min.js"
+        strategy="beforeInteractive"
+      />
+
+      {/* BEGIN: Theme JS */}
+      <Script
+        src="/app-assets/js/core/app-menu.js"
+        strategy="afterInteractive"
+      />
+      <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
+      <div className="app-content content ">
+        <div className="content-overlay" />
+        <div className="header-navbar-shadow" />
+        <div className="content-wrapper container-xxl p-0">
+          <div className="content-header row">
+            <div className="content-header-left col-md-9 col-12 mb-2">
+              <div className="row breadcrumbs-top">
+                <div className="col-12">
+                  <h2 className="content-header-title float-start mb-0">
+                    Timeline
+                  </h2>
+                  <div className="breadcrumb-wrapper">
+                    <ol className="breadcrumb">
+                      <li className="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li className="breadcrumb-item">
+                        <a href="#">Components</a>
+                      </li>
+                      <li className="breadcrumb-item active">Timeline</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-header-right text-md-end col-md-3 col-12 d-md-block d-none">
+              <div className="mb-1 breadcrumb-right">
+                <div className="dropdown">
+                  <button
+                    className="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i data-feather="grid" />
+                  </button>
+                  <div className="dropdown-menu dropdown-menu-end">
+                    <a className="dropdown-item" href="app-todo.html">
+                      <i className="me-1" data-feather="check-square" />
+                      <span className="align-middle">Todo</span>
+                    </a>
+                    <a className="dropdown-item" href="app-chat.html">
+                      <i className="me-1" data-feather="message-square" />
+                      <span className="align-middle">Chat</span>
+                    </a>
+                    <a className="dropdown-item" href="app-email.html">
+                      <i className="me-1" data-feather="mail" />
+                      <span className="align-middle">Email</span>
+                    </a>
+                    <a className="dropdown-item" href="app-calendar.html">
+                      <i className="me-1" data-feather="calendar" />
+                      <span className="align-middle">Calendar</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-body">
+            {/* Timeline Starts */}
+            <section className="basic-timeline">
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="card">
+                    <div className="card-header">
+                      <h4 className="card-title">Basic</h4>
+                    </div>
+                    <div className="card-body">
+                      <ul className="timeline">
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-indicator" />
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>12 Invoices have been paid</h6>
+                              <span className="timeline-event-time">
+                                12 min ago
+                              </span>
+                            </div>
+                            <p>Invoices have been paid to the company.</p>
+                            <div className="d-flex flex-row align-items-center">
+                              <img
+                                className="me-1"
+                                src="../../../app-assets/images/icons/file-icons/pdf.png"
+                                alt="invoice"
+                                height={23}
+                              />
+                              <span>invoice.pdf</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-secondary timeline-point-indicator" />
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>Client Meeting</h6>
+                              <span className="timeline-event-time">
+                                45 min ago
+                              </span>
+                            </div>
+                            <p>Project meeting with john @10:15am.</p>
+                            <div className="d-flex flex-row align-items-center">
+                              <div className="avatar">
+                                <img
+                                  src="../../../app-assets/images/avatars/12-small.png"
+                                  alt="avatar"
+                                  height={38}
+                                  width={38}
+                                />
+                              </div>
+                              <div className="ms-50">
+                                <h6 className="mb-0">John Doe (Client)</h6>
+                                <span>CEO of Infibeam</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-success timeline-point-indicator" />
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>Financial Report</h6>
+                              <span className="timeline-event-time">
+                                2 hours ago
+                              </span>
+                            </div>
+                            <p className="mb-50">
+                              Click the button below to read financial reports
+                            </p>
+                            <button
+                              className="btn btn-outline-primary btn-sm"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseExample"
+                              aria-expanded="true"
+                              aria-controls="collapseExample"
+                            >
+                              Show Report
+                            </button>
+                            <div className="collapse" id="collapseExample">
+                              <ul className="list-group list-group-flush mt-1">
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    Last Year's Profit :{" "}
+                                    <span className="fw-bold">$20000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    This Year's Profit :{" "}
+                                    <span className="fw-bold">$25000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    Last Year's Commission :{" "}
+                                    <span className="fw-bold">$5000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    This Year's Commission :{" "}
+                                    <span className="fw-bold">$7000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    This Year's Total Balance :{" "}
+                                    <span className="fw-bold">$70000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-warning timeline-point-indicator" />
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6 className="mb-50">Interview Schedule</h6>
+                              <span className="timeline-event-time">
+                                03:00 PM
+                              </span>
+                            </div>
+                            <p>
+                              Have to interview Katy Turner for the developer
+                              job.
+                            </p>
+                            <hr />
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <div className="d-flex flex-row align-items-center">
+                                <div className="avatar me-1">
+                                  <img
+                                    src="../../../app-assets/images/avatars/1-small.png"
+                                    alt="Avatar"
+                                    height={32}
+                                    width={32}
+                                  />
+                                </div>
+                                <span>
+                                  <p className="mb-0">Katy Turner</p>
+                                  <span className="text-muted">
+                                    Javascript Developer
+                                  </span>
+                                </span>
+                              </div>
+                              <div className="d-flex align-items-center cursor-pointer mt-sm-0 mt-50">
+                                <i
+                                  data-feather="message-square"
+                                  className="me-1"
+                                />
+                                <i data-feather="phone-call" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-danger timeline-point-indicator" />
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>Online Store</h6>
+                              <span className="timeline-event-time">
+                                03:00PM
+                              </span>
+                            </div>
+                            <p>
+                              Develop an online store of electronic devices for
+                              the provided layout, as well as develop a mobile
+                              version of it. The must be compatible with any
+                              CMS.
+                            </p>
+                            <div className="d-flex justify-content-between flex-wrap flex-sm-row flex-column">
+                              <div>
+                                <p className="text-muted mb-50">Developers</p>
+                                <div className="d-flex align-items-center">
+                                  <div className="avatar bg-light-primary avatar-sm me-50">
+                                    <span className="avatar-content">A</span>
+                                  </div>
+                                  <div className="avatar bg-light-success avatar-sm me-50">
+                                    <span className="avatar-content">B</span>
+                                  </div>
+                                  <div className="avatar bg-light-danger avatar-sm">
+                                    <span className="avatar-content">C</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="mt-sm-0 mt-1">
+                                <p className="text-muted mb-50">Deadline</p>
+                                <p className="mb-0">20 Dec 2077</p>
+                              </div>
+                              <div className="mt-sm-0 mt-1">
+                                <p className="text-muted mb-50">Budget</p>
+                                <p className="mb-0">$50000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-info timeline-point-indicator" />
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between align-items-center mb-50">
+                              <h6>Designing UI</h6>
+                              <div>
+                                <span className="badge rounded-pill badge-light-primary">
+                                  Design
+                                </span>
+                              </div>
+                            </div>
+                            <p>
+                              Our main goal is to design a new mobile
+                              application for our client. The customer wants a
+                              clean &amp; flat design.
+                            </p>
+                            <div>
+                              <span className="text-muted">Participants</span>
+                              <div className="avatar-group mt-50">
+                                <div
+                                  data-bs-toggle="tooltip"
+                                  data-popup="tooltip-custom"
+                                  data-bs-placement="bottom"
+                                  title="Vinnie Mostowy"
+                                  className="avatar pull-up"
+                                >
+                                  <img
+                                    src="../../../app-assets/images/portrait/small/avatar-s-5.jpg"
+                                    alt="Avatar"
+                                    height={30}
+                                    width={30}
+                                  />
+                                </div>
+                                <div
+                                  data-bs-toggle="tooltip"
+                                  data-popup="tooltip-custom"
+                                  data-bs-placement="bottom"
+                                  title="Elicia Rieske"
+                                  className="avatar pull-up"
+                                >
+                                  <img
+                                    src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                    alt="Avatar"
+                                    height={30}
+                                    width={30}
+                                  />
+                                </div>
+                                <div
+                                  data-bs-toggle="tooltip"
+                                  data-popup="tooltip-custom"
+                                  data-bs-placement="bottom"
+                                  title="Julee Rossignol"
+                                  className="avatar pull-up"
+                                >
+                                  <img
+                                    src="../../../app-assets/images/portrait/small/avatar-s-10.jpg"
+                                    alt="Avatar"
+                                    height={30}
+                                    width={30}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="card">
+                    <div className="card-header">
+                      <h4 className="card-title">Icons</h4>
+                    </div>
+                    <div className="card-body">
+                      <ul className="timeline">
+                        <li className="timeline-item">
+                          <span className="timeline-point">
+                            <i data-feather="dollar-sign" />
+                          </span>
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>12 Invoices have been paid</h6>
+                              <span className="timeline-event-time">
+                                12 min ago
+                              </span>
+                            </div>
+                            <p>Invoices have been paid to the company.</p>
+                            <div className="d-flex flex-row align-items-center">
+                              <img
+                                className="me-1"
+                                src="../../../app-assets/images/icons/file-icons/pdf.png"
+                                alt="invoice"
+                                height={23}
+                              />
+                              <span>invoice.pdf</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-secondary">
+                            <i data-feather="user" />
+                          </span>
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>Client Meeting</h6>
+                              <span className="timeline-event-time">
+                                45 min ago
+                              </span>
+                            </div>
+                            <p>Project meeting with john @10:15am.</p>
+                            <div className="d-flex flex-row align-items-center">
+                              <div className="avatar">
+                                <img
+                                  src="../../../app-assets/images/avatars/12-small.png"
+                                  alt="avatar"
+                                  height={38}
+                                  width={38}
+                                />
+                              </div>
+                              <div className="ms-50">
+                                <h6 className="mb-0">John Doe (Client)</h6>
+                                <span>CEO of Infibeam</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-success">
+                            <i data-feather="file-text" />
+                          </span>
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>Financial Report</h6>
+                              <span className="timeline-event-time">
+                                2 hours ago
+                              </span>
+                            </div>
+                            <p className="mb-50">
+                              Click the button below to read financial reports
+                            </p>
+                            <button
+                              className="btn btn-outline-primary btn-sm"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseExample2"
+                              aria-expanded="true"
+                              aria-controls="collapseExample2"
+                            >
+                              Show Report
+                            </button>
+                            <div className="collapse" id="collapseExample2">
+                              <ul className="list-group list-group-flush mt-1">
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    Last Year's Profit :{" "}
+                                    <span className="fw-bold">$20000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    This Year's Profit :{" "}
+                                    <span className="fw-bold">$25000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    Last Year's Commission :{" "}
+                                    <span className="fw-bold">$5000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    This Year's Commission :{" "}
+                                    <span className="fw-bold">$7000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                                <li className="list-group-item d-flex justify-content-between flex-wrap">
+                                  <span>
+                                    {" "}
+                                    This Year's Total Balance :{" "}
+                                    <span className="fw-bold">$70000</span>
+                                  </span>
+                                  <i
+                                    data-feather="share-2"
+                                    className="cursor-pointer font-medium-2"
+                                  />
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-warning">
+                            <i data-feather="map-pin" />
+                          </span>
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6 className="mb-50">Interview Schedule</h6>
+                              <span className="timeline-event-time">
+                                03:00 PM
+                              </span>
+                            </div>
+                            <p>
+                              Have to interview Katy Turner for the developer
+                              job.
+                            </p>
+                            <hr />
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <div className="d-flex flex-row align-items-center">
+                                <div className="avatar me-1">
+                                  <img
+                                    src="../../../app-assets/images/avatars/1-small.png"
+                                    alt="Avatar"
+                                    height={32}
+                                    width={32}
+                                  />
+                                </div>
+                                <span>
+                                  <p className="mb-0">Katy Turner</p>
+                                  <span className="text-muted">
+                                    Javascript Developer
+                                  </span>
+                                </span>
+                              </div>
+                              <div className="d-flex align-items-center cursor-pointer mt-sm-0 mt-50">
+                                <i
+                                  data-feather="message-square"
+                                  className="me-1"
+                                />
+                                <i data-feather="phone-call" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-danger">
+                            <i data-feather="shopping-bag" />
+                          </span>
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between flex-sm-row flex-column mb-sm-0 mb-1">
+                              <h6>Online Store</h6>
+                              <span className="timeline-event-time">
+                                03:00PM
+                              </span>
+                            </div>
+                            <p>
+                              Develop an online store of electronic devices for
+                              the provided layout, as well as develop a mobile
+                              version of it. The must be compatible with any
+                              CMS.
+                            </p>
+                            <div className="d-flex justify-content-between flex-wrap flex-sm-row flex-column">
+                              <div>
+                                <p className="text-muted mb-50">Developers</p>
+                                <div className="d-flex align-items-center">
+                                  <div className="avatar bg-light-primary avatar-sm me-50">
+                                    <span className="avatar-content">A</span>
+                                  </div>
+                                  <div className="avatar bg-light-success avatar-sm me-50">
+                                    <span className="avatar-content">B</span>
+                                  </div>
+                                  <div className="avatar bg-light-danger avatar-sm">
+                                    <span className="avatar-content">C</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="mt-sm-0 mt-1">
+                                <p className="text-muted mb-50">Deadline</p>
+                                <p className="mb-0">20 Dec 2077</p>
+                              </div>
+                              <div className="mt-sm-0 mt-1">
+                                <p className="text-muted mb-50">Budget</p>
+                                <p className="mb-0">$50000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="timeline-item">
+                          <span className="timeline-point timeline-point-info">
+                            <i data-feather="server" />
+                          </span>
+                          <div className="timeline-event">
+                            <div className="d-flex justify-content-between align-items-center mb-50">
+                              <h6>Designing UI</h6>
+                              <div>
+                                <span className="badge rounded-pill badge-light-primary">
+                                  Design
+                                </span>
+                              </div>
+                            </div>
+                            <p>
+                              Our main goal is to design a new mobile
+                              application for our client. The customer wants a
+                              clean &amp; flat design.
+                            </p>
+                            <div>
+                              <span className="text-muted">Participants</span>
+                              <div className="avatar-group mt-50">
+                                <div
+                                  data-bs-toggle="tooltip"
+                                  data-popup="tooltip-custom"
+                                  data-bs-placement="bottom"
+                                  title="Vinnie Mostowy"
+                                  className="avatar pull-up"
+                                >
+                                  <img
+                                    src="../../../app-assets/images/portrait/small/avatar-s-5.jpg"
+                                    alt="Avatar"
+                                    height={30}
+                                    width={30}
+                                  />
+                                </div>
+                                <div
+                                  data-bs-toggle="tooltip"
+                                  data-popup="tooltip-custom"
+                                  data-bs-placement="bottom"
+                                  title="Elicia Rieske"
+                                  className="avatar pull-up"
+                                >
+                                  <img
+                                    src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+                                    alt="Avatar"
+                                    height={30}
+                                    width={30}
+                                  />
+                                </div>
+                                <div
+                                  data-bs-toggle="tooltip"
+                                  data-popup="tooltip-custom"
+                                  data-bs-placement="bottom"
+                                  title="Julee Rossignol"
+                                  className="avatar pull-up"
+                                >
+                                  <img
+                                    src="../../../app-assets/images/portrait/small/avatar-s-10.jpg"
+                                    alt="Avatar"
+                                    height={30}
+                                    width={30}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {/* Timeline Ends */}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
