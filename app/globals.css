@@ -18,6 +18,7 @@
 @import '../public/app-assets/vendors/css/editors/quill/quill.bubble.css';
 @import '../public/app-assets/vendors/css/pickers/pickadate/pickadate.css';
 @import '../public/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css';
+@import '../public/app-assets/vendors/css/maps/leaflet.min.css';
 
 
 /* Theme css  */
@@ -85,6 +86,7 @@
 @import '../public/app-assets/css/plugins/forms/form-file-uploader.css';
 @import '../public/app-assets/css/plugins/forms/pickers/form-flat-pickr.css';
 @import '../public/app-assets/css/plugins/forms/pickers/form-pickadate.css';
+@import '../public/app-assets/css/plugins/maps/map-leaflet.css';
 
 
 

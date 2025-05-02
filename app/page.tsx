@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <>
+    
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />

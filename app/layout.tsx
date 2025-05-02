@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="pace-running">
         {/* Scripts from /public */}
-        <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
+        {/* <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
         <Script src="/app-assets/vendors/js/charts/apexcharts.min.js" strategy="beforeInteractive" />
         <Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="beforeInteractive" />
         <Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
@@ -36,8 +36,8 @@ export default function RootLayout({
                 window.feather.replace({ width: 14, height: 14 });
               }
             });
-          `}
-        </Script>
+          `} */}
+        {/* </Script> */}
         <Header />
         <Sidenav />
         {children}
