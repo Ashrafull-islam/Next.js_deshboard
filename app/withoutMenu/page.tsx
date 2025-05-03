@@ -1,8 +1,8 @@
 
 export default function page() {
+  
   return (
     <>
-  
         <div className="app-content content ">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -1056,7 +1056,6 @@ export default function page() {
     </div>
   </div>
 </div>
-
     </>
   )
 }
