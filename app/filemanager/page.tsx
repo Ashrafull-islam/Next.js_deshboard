@@ -1,23 +1,7 @@
-"use client"
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-     {/* Vendor JS */}
-     <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-{/* Page Vendor JS */}
-<Script src="/app-assets/vendors/js/extensions/jstree.min.js" strategy="afterInteractive" />
-
-{/* Theme JS */}
-<Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-<Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-{/* Page JS */}
-<Script src="/app-assets/js/scripts/pages/app-file-manager.js" strategy="afterInteractive" />
-
-{/* Content */}
     <div className="app-content content file-manager-application">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -54,7 +38,7 @@ export default function page() {
                   <div className="mb-0" htmlFor="file-upload">
                     <i data-feather="upload-cloud" className="me-25" />
                     <span className="align-middle">File Upload</span>
-                    <input type="file" id="file-upload" hidden="" />
+                    <input type="file" id="file-upload" hidden={true} />
                   </div>
                 </div>
                 <div className="dropdown-item">
@@ -64,9 +48,7 @@ export default function page() {
                     <input
                       type="file"
                       id="folder-upload"
-                      webkitdirectory=""
-                      mozdirectory=""
-                      hidden=""
+                      hidden={true}
                     />
                   </div>
                 </div>
@@ -277,7 +259,7 @@ export default function page() {
                     name="view-btn-radio"
                     data-view="grid"
                     id="gridView"
-                    defaultChecked=""
+                    defaultChecked={true}
                     autoComplete="off"
                   />
                   <label
@@ -1055,7 +1037,7 @@ export default function page() {
                             <input
                               type="checkbox"
                               className="form-check-input"
-                              defaultChecked=""
+                              defaultChecked={true}
                               id="sync"
                             />
                             <label

@@ -1,7 +1,21 @@
+import Script from "next/script";
+
 export default function Home() {
   return (
     <>
-    
+      {/* BEGIN: Vendor JS */}
+      <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
+      {/* END: Vendor JS */}
+
+      {/* BEGIN: Page Vendor JS */}
+      <Script src="/app-assets/vendors/js/charts/apexcharts.min.js" strategy="afterInteractive" />
+      <Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="afterInteractive" />
+      <Script src="/app-assets/vendors/js/extensions/moment.min.js" strategy="afterInteractive" />
+      <Script src="/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js" strategy="afterInteractive" />
+      <Script src="/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js" strategy="afterInteractive" />
+      <Script src="/app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js" strategy="afterInteractive" />
+      <Script src="/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js" strategy="afterInteractive" />
+      <Script src="/app-assets/vendors/js/tables/datatable/responsive.bootstrap5.js" strategy="afterInteractive" />
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />

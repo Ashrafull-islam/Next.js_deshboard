@@ -1,50 +1,7 @@
-"use client";
-
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-      {/* BEGIN: Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/vendors.min.js"
-        strategy="beforeInteractive"
-      />
-
-      {/* BEGIN: Page Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="/app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="/app-assets/vendors/js/tables/datatable/responsive.bootstrap5.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="/app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"
-        strategy="afterInteractive"
-      />
-
-      {/* BEGIN: Theme JS */}
-      <Script
-        src="/app-assets/js/core/app-menu.js"
-        strategy="afterInteractive"
-      />
-      <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-      {/* BEGIN: Page JS */}
-      <Script
-        src="/app-assets/js/scripts/tables/table-datatables-advanced.js"
-        strategy="afterInteractive"
-      />
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />

@@ -1,34 +1,8 @@
-"use client"
-import Script from "next/script";
 
 export default function page() {
 
   return (
     <>
-      {/* Vendor JS */}
-      <Script src="/app-assets/vendors/js/vendors.min.js" strategy="afterInteractive" />
-
-      {/* Page Vendor JS */}
-      <Script src="/app-assets/vendors/js/forms/repeater/jquery.repeater.min.js" strategy="afterInteractive" />
-      <Script src="/app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js" strategy="afterInteractive" />
-
-      {/* Theme JS */}
-      <Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-      <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-      {/* Page JS */}
-      <Script src="/app-assets/js/scripts/pages/app-invoice.js" strategy="afterInteractive" />
-
-      {/* Inline feather.replace script */}
-      <Script id="feather-icons-init" strategy="afterInteractive">
-        {`
-          $(window).on('load', function () {
-            if (typeof feather !== 'undefined') {
-              feather.replace({ width: 14, height: 14 });
-            }
-          });
-        `}
-      </Script>
     <div className="app-content content ">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -137,7 +111,7 @@ export default function page() {
                         <input
                           type="text"
                           className="form-control invoice-edit-input"
-                          placeholder={53634}
+                          placeholder='53672'
                         />
                       </div>
                     </div>
@@ -217,7 +191,7 @@ export default function page() {
                               </p>
                               <select className="form-select item-details">
                                 <option value="App Design">App Design</option>
-                                <option value="App Customization" selected="">
+                                <option value="App Customization" selected={true}>
                                   App Customization
                                 </option>
                                 <option value="ABC Template">
@@ -241,7 +215,7 @@ export default function page() {
                                 type="number"
                                 className="form-control"
                                 defaultValue={24}
-                                placeholder={24}
+                                placeholder='24'
                               />
                               <div className="mt-2">
                                 <span>Discount:</span>
@@ -272,7 +246,7 @@ export default function page() {
                                 type="number"
                                 className="form-control"
                                 defaultValue={1}
-                                placeholder={1}
+                                placeholder="1"
                               />
                             </div>
                             <div className="col-lg-2 col-12 mt-lg-0 mt-2">
@@ -328,7 +302,7 @@ export default function page() {
                                       id="tax-1-input"
                                       className="form-select tax-select"
                                     >
-                                      <option value="0%" selected="">
+                                      <option value="0%" selected={true}>
                                         0%
                                       </option>
                                       <option value="1%">1%</option>
@@ -349,7 +323,7 @@ export default function page() {
                                       id="tax-2-input"
                                       className="form-select tax-select"
                                     >
-                                      <option value="0%" selected="">
+                                      <option value="0%" selected={true}>
                                         0%
                                       </option>
                                       <option value="1%">1%</option>
@@ -512,7 +486,7 @@ export default function page() {
                     <input
                       type="checkbox"
                       className="form-check-input"
-                      defaultChecked=""
+                      defaultChecked={true}
                       id="paymentTerms"
                     />
                     <label
@@ -532,7 +506,7 @@ export default function page() {
                     <input
                       type="checkbox"
                       className="form-check-input"
-                      defaultChecked=""
+                      defaultChecked={true}
                       id="clientNotes"
                     />
                     <label className="form-check-label" htmlFor="clientNotes" />
@@ -690,7 +664,7 @@ export default function page() {
                       className="form-control"
                       type="text"
                       defaultValue="Invoice Balance: 5000.00"
-                      disabled=""
+                      disabled={true}
                     />
                   </div>
                   <div className="mb-1">
@@ -719,7 +693,7 @@ export default function page() {
                       Payment Method
                     </label>
                     <select className="form-select" id="payment-method">
-                      <option value="" selected="" disabled="">
+                      <option value="" selected={true} disabled={true}>
                         Select payment method
                       </option>
                       <option value="Cash">Cash</option>

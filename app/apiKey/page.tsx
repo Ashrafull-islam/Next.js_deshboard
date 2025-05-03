@@ -1,34 +1,8 @@
-"use client";
-
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-      <Script
-        src="../../../app-assets/vendors/js/vendors.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/js/core/app-menu.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/js/core/app.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/js/scripts/pages/page-api-key.js"
-        strategy="afterInteractive"
-      />
+    
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />

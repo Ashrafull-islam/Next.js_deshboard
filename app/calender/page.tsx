@@ -36,7 +36,7 @@ export default function page() {
                       type="checkbox"
                       className="form-check-input select-all"
                       id="select-all"
-                      defaultChecked=""
+                      defaultChecked={true}
                     />
                     <label className="form-check-label" htmlFor="select-all">
                       View All
@@ -49,7 +49,7 @@ export default function page() {
                         className="form-check-input input-filter"
                         id="personal"
                         data-value="personal"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="personal">
                         Personal
@@ -61,7 +61,7 @@ export default function page() {
                         className="form-check-input input-filter"
                         id="business"
                         data-value="business"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="business">
                         Business
@@ -73,7 +73,7 @@ export default function page() {
                         className="form-check-input input-filter"
                         id="family"
                         data-value="family"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="family">
                         Family
@@ -85,7 +85,7 @@ export default function page() {
                         className="form-check-input input-filter"
                         id="holiday"
                         data-value="holiday"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="holiday">
                         Holiday
@@ -97,7 +97,7 @@ export default function page() {
                         className="form-check-input input-filter"
                         id="etc"
                         data-value="etc"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="etc">
                         ETC
@@ -149,7 +149,6 @@ export default function page() {
                 <form
                   className="event-form needs-validation"
                   data-ajax="false"
-                  noValidate=""
                 >
                   <div className="mb-1">
                     <label htmlFor="title" className="form-label">
@@ -161,7 +160,7 @@ export default function page() {
                       id="title"
                       name="title"
                       placeholder="Event Title"
-                      required=""
+                      required={true}
                     />
                   </div>
                   <div className="mb-1">
@@ -173,7 +172,7 @@ export default function page() {
                       id="select-label"
                       name="select-label"
                     >
-                      <option data-label="primary" value="Business" selected="">
+                      <option data-label="primary" value="Business" selected={true}>
                         Business
                       </option>
                       <option data-label="danger" value="Personal">
@@ -247,7 +246,7 @@ export default function page() {
                     <select
                       className="select2 select-add-guests form-select w-100"
                       id="event-guests"
-                      multiple=""
+                      multiple={true}
                     >
                       <option data-avatar="1-small.png" value="Jane Foster">
                         Jane Foster

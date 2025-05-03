@@ -1,6 +1,31 @@
+"use client"
+import Script from "next/script";
+
 export default function page() {
   return (
     <>
+    {/* BEGIN: Vendor JS */}
+  <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
+  {/* END: Vendor JS */}
+
+  {/* BEGIN: Page Vendor JS */}
+  <Script src="/app-assets/vendors/js/editors/quill/katex.min.js" strategy="afterInteractive" />
+  <Script src="/app-assets/vendors/js/editors/quill/highlight.min.js" strategy="afterInteractive" />
+  <Script src="/app-assets/vendors/js/editors/quill/quill.min.js" strategy="afterInteractive" />
+  <Script src="/app-assets/vendors/js/forms/select/select2.full.min.js" strategy="afterInteractive" />
+  <Script src="/app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js" strategy="afterInteractive" />
+  <Script src="/app-assets/vendors/js/extensions/dragula.min.js" strategy="afterInteractive" />
+  <Script src="/app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
+  <Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="afterInteractive" />
+  {/* END: Page Vendor JS */}
+
+  {/* BEGIN: Theme JS */}
+  <Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
+  <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
+  {/* END: Theme JS */}
+
+  {/* BEGIN: Page JS */}
+  <Script src="/app-assets/js/scripts/pages/app-todo.js" strategy="afterInteractive" />
     <div className="app-content content todo-application">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -294,7 +319,7 @@ export default function page() {
                             type="checkbox"
                             className="form-check-input"
                             id="customCheck4"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                           <label
                             className="form-check-label"
@@ -420,7 +445,7 @@ export default function page() {
                             type="checkbox"
                             className="form-check-input"
                             id="customCheck7"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                           <label
                             className="form-check-label"
@@ -582,7 +607,7 @@ export default function page() {
                             type="checkbox"
                             className="form-check-input"
                             id="customCheck11"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                           <label
                             className="form-check-label"
@@ -688,7 +713,7 @@ export default function page() {
                             type="checkbox"
                             className="form-check-input"
                             id="customCheck14"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                           <label
                             className="form-check-label"
@@ -817,8 +842,8 @@ export default function page() {
                 <form
                   id="form-modal-todo"
                   className="todo-modal needs-validation"
-                  noValidate=""
-                  onsubmit="return false"
+                  noValidate={true}
+                  // onsubmit="return false"
                 >
                   <div className="modal-header align-items-center mb-1">
                     <h5 className="modal-title">Add Task</h5>
@@ -830,7 +855,6 @@ export default function page() {
                         data-feather="x"
                         className="cursor-pointer"
                         data-bs-dismiss="modal"
-                        strokeWidth={3}
                       />
                     </div>
                   </div>
@@ -863,7 +887,7 @@ export default function page() {
                           <option
                             data-img="../../../app-assets/images/portrait/small/avatar-s-3.jpg"
                             value="Phill Buffer"
-                            selected=""
+                            selected={true}
                           >
                             Phill Buffer
                           </option>
@@ -921,7 +945,7 @@ export default function page() {
                           className="form-select task-tag"
                           id="task-tag"
                           name="task-tag"
-                          multiple="multiple"
+                          multiple={true}
                         >
                           <option value="Team">Team</option>
                           <option value="Low">Low</option>

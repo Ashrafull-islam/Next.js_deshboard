@@ -1,6 +1,5 @@
 /* vender css */
 @import '../public/app-assets/vendors/css/vendors-rtl.min.css';
-@import '../public/app-assets/vendors/css/charts/apexcharts.css';
 @import '../public/app-assets/vendors/css/extensions/toastr.min.css';
 @import '../public/app-assets/vendors/css/forms/select/select2.min.css';
 @import '../public/app-assets/vendors/css/editors/quill/monokai-sublime.min.css';
@@ -19,6 +18,11 @@
 @import '../public/app-assets/vendors/css/pickers/pickadate/pickadate.css';
 @import '../public/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css';
 @import '../public/app-assets/vendors/css/maps/leaflet.min.css';
+@import '../public/app-assets/vendors/css/extensions/dragula.min.css';
+@import '../public/app-assets/vendors/css/calendars/fullcalendar.min.css';
+@import '../public/app-assets/vendors/css/jkanban/jkanban.min.css';
+/* @import '../public/app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css'; */
+
 
 
 /* Theme css  */
@@ -36,7 +40,6 @@
 
 @import '../public/app-assets/css/core/menu/menu-types/vertical-menu.css';
 @import '../public/app-assets/css/pages/dashboard-ecommerce.css';
-@import '../public/app-assets/css/plugins/extensions/ext-component-toastr.css';
 @import '../public/app-assets/css/plugins/extensions/ext-component-sliders.css';
 @import '../public/app-assets/css/plugins/extensions/ext-component-sweet-alerts.css';
 @import '../public/app-assets/css/plugins/extensions/ext-component-toastr.css';

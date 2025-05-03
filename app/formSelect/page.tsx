@@ -1,34 +1,7 @@
-"use client";
-
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-      {/* BEGIN: Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/vendors.min.js"
-        strategy="beforeInteractive"
-      />
-
-      {/* BEGIN: Page Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/forms/select/select2.full.min.js"
-        strategy="afterInteractive"
-      />
-
-      {/* BEGIN: Theme JS */}
-      <Script
-        src="/app-assets/js/core/app-menu.js"
-        strategy="afterInteractive"
-      />
-      <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-      {/* BEGIN: Page JS */}
-      <Script
-        src="/app-assets/js/scripts/forms/form-select2.js"
-        strategy="afterInteractive"
-      />
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />
@@ -116,7 +89,7 @@ export default function page() {
                         </label>
                         <select
                           className="form-select"
-                          disabled="disabled"
+                          disabled={true}
                           id="disabledSelect"
                         >
                           <option>Green</option>
@@ -135,7 +108,7 @@ export default function page() {
                         <select
                           className="form-select"
                           id="normalMultiSelect"
-                          multiple="multiple"
+                          multiple={true}
                         >
                           <option selected={true}>Square</option>
                           <option>Rectangle</option>
@@ -380,7 +353,7 @@ export default function page() {
                           <select
                             className="select2 form-select"
                             id="select2-multiple"
-                            multiple=""
+                            multiple={true}
                           >
                             <optgroup label="Alaskan/Hawaiian Time Zone">
                               <option value="AK">Alaska</option>
@@ -587,7 +560,7 @@ export default function page() {
                           <select
                             className="max-length form-select"
                             id="select2-limited"
-                            multiple=""
+                            multiple={true}
                           >
                             <optgroup label="Figures">
                               <option value="romboid">Romboid</option>
@@ -861,7 +834,7 @@ export default function page() {
                           <div className="mb-1">
                             <select
                               className="select2-size-lg form-select"
-                              multiple="multiple"
+                              multiple={true}
                               id="large-select-multi"
                             >
                               <option value="square" selected={true}>
@@ -886,7 +859,7 @@ export default function page() {
                           <div className="mb-1">
                             <select
                               className="select2 form-select"
-                              multiple="multiple"
+                              multiple={true}
                               id="default-select-multi"
                             >
                               <option value="square">Square</option>
@@ -911,7 +884,7 @@ export default function page() {
                           <div className="mb-1">
                             <select
                               className="select2-size-sm form-select"
-                              multiple="multiple"
+                              multiple={true}
                               id="small-select-multi"
                             >
                               <option value="square">Square</option>

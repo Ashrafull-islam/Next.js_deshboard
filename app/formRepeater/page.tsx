@@ -1,34 +1,7 @@
-"use client";
-
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-      {/* BEGIN: Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/vendors.min.js"
-        strategy="beforeInteractive"
-      />
-
-      {/* BEGIN: Page Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"
-        strategy="beforeInteractive"
-      />
-
-      {/* BEGIN: Theme JS */}
-      <Script
-        src="/app-assets/js/core/app-menu.js"
-        strategy="afterInteractive"
-      />
-      <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-      {/* BEGIN: Page JS */}
-      <Script
-        src="/app-assets/js/scripts/forms/form-repeater.js"
-        strategy="afterInteractive"
-      />
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />

@@ -1,8 +1,7 @@
-"use client"
+
 export default function page() {
   return (
     <>
-    
     <div className="app-content content ">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />

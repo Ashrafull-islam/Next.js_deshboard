@@ -1,3 +1,4 @@
+
 export default function page() {
   return (
     <>
@@ -24,7 +25,7 @@ export default function page() {
                       className="form-control add-new-board-input mb-50"
                       placeholder="Add Board Title"
                       id="add-new-board-input"
-                      required=""
+                      required={true}
                     />
                     <div className="mb-1 add-new-board-input">
                       <button className="btn btn-primary btn-sm me-75">
@@ -172,7 +173,7 @@ export default function page() {
                                 className="form-control file-attachments"
                                 type="file"
                                 id="attachments"
-                                multiple=""
+                                multiple={true}
                               />
                             </div>
                             <div className="mb-1">

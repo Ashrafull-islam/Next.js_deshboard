@@ -1,49 +1,7 @@
-"use client";
-
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-      {/* BEGIN: Vendor JS */}
-      <Script
-        src="../../../app-assets/vendors/js/vendors.min.js"
-        strategy="afterInteractive"
-      />
-
-      {/* BEGIN: Page Vendor JS */}
-      <Script
-        src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/vendors/js/editors/quill/katex.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/vendors/js/editors/quill/highlight.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/vendors/js/editors/quill/quill.min.js"
-        strategy="afterInteractive"
-      />
-
-      {/* BEGIN: Theme JS */}
-      <Script
-        src="../../../app-assets/js/core/app-menu.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="../../../app-assets/js/core/app.js"
-        strategy="afterInteractive"
-      />
-
-      {/* BEGIN: Page JS */}
-      <Script
-        src="../../../app-assets/js/scripts/pages/page-blog-edit.js"
-        strategy="afterInteractive"
-      />
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />
@@ -157,13 +115,13 @@ export default function page() {
                               <select
                                 id="blog-edit-category"
                                 className="select2 form-select"
-                                multiple=""
+                                multiple={true}
                               >
-                                <option value="Fashion" selected="">
+                                <option value="Fashion" selected={true}>
                                   Fashion
                                 </option>
                                 <option value="Food">Food</option>
-                                <option value="Gaming" selected="">
+                                <option value="Gaming" selected={true}>
                                   Gaming
                                 </option>
                                 <option value="Quote">Quote</option>

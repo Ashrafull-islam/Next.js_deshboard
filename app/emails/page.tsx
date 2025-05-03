@@ -1,6 +1,7 @@
 export default function Page() {
   return (
    <>
+   
    <div className="app-content content email-application">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -1305,7 +1306,7 @@ export default function Page() {
                         <select
                           className="select2 form-select w-100"
                           id="email-to"
-                          multiple=""
+                          multiple={true}
                         >
                           <option data-avatar="1-small.png" value="Jane Foster">
                             Jane Foster
@@ -1342,7 +1343,7 @@ export default function Page() {
                         <select
                           className="select2 form-select w-100"
                           id="emailCC"
-                          multiple=""
+                          multiple={true}
                         >
                           <option data-avatar="1-small.png" value="Jane Foster">
                             Jane Foster
@@ -1374,7 +1375,7 @@ export default function Page() {
                         <select
                           className="select2 form-select w-100"
                           id="emailBCC"
-                          multiple=""
+                          multiple={true}
                         >
                           <option data-avatar="1-small.png" value="Jane Foster">
                             Jane Foster

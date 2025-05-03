@@ -1,22 +1,7 @@
-"use client"
-
-import Script from "next/script"
 
 export default function page() {
   return (
     <>
-    {/* Vendor JS */}
-    <Script src="../../../app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-{/* Page Vendor JS */}
-<Script src="../../../app-assets/vendors/js/charts/apexcharts.min.js" strategy="lazyOnload" />
-
-{/* Theme JS */}
-<Script src="../../../app-assets/js/core/app-menu.js" strategy="lazyOnload" />
-<Script src="../../../app-assets/js/core/app.js" strategy="lazyOnload" />
-
-{/* Page JS */}
-<Script src="../../../app-assets/js/scripts/cards/card-analytics.js" strategy="lazyOnload" />
     <div className="app-content content ">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />

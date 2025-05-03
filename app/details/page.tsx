@@ -1,25 +1,6 @@
-"use client"
-import Script from "next/script";
-
 export default function page() {
   return (
     <>
-     {/* Vendor JS */}
-     <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-{/* Page Vendor JS */}
-<Script src="/app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/extensions/swiper.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="afterInteractive" />
-
-{/* Theme JS */}
-<Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-<Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-{/* Page JS */}
-<Script src="/app-assets/js/scripts/pages/app-ecommerce-details.js" strategy="afterInteractive" />
-<Script src="/app-assets/js/scripts/forms/form-number-input.js" strategy="afterInteractive" />
-
         <div className="app-content content ecommerce-application">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
