@@ -1,23 +1,7 @@
-"use client"
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-     {/* Vendor JS */}
-     <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-{/* Page Vendor JS */}
-<Script src="/app-assets/vendors/js/extensions/wNumb.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/extensions/nouislider.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="afterInteractive" />
-
-{/* Theme JS */}
-<Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-<Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-{/* Page JS */}
-<Script src="/app-assets/js/scripts/pages/app-ecommerce.js" strategy="afterInteractive" />
 
         <div className="app-content content ecommerce-application">
   <div className="content-overlay" />
@@ -125,7 +109,7 @@ export default function page() {
                       name="radio_options"
                       id="radio_option1"
                       autoComplete="off"
-                      defaultChecked=""
+                      defaultChecked={true}
                     />
                     <label
                       className="btn btn-icon btn-outline-primary view-btn grid-view-btn"
@@ -927,7 +911,7 @@ export default function page() {
                         id="priceAll"
                         name="price-range"
                         className="form-check-input"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="priceAll">
                         All
@@ -1011,7 +995,7 @@ export default function page() {
                         id="category1"
                         name="category-filter"
                         className="form-check-input"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="category1">
                         Appliances
@@ -1164,7 +1148,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="productBrand2"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"
@@ -1213,7 +1197,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="productBrand5"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"

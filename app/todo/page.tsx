@@ -1,31 +1,7 @@
-"use client"
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-    {/* BEGIN: Vendor JS */}
-  <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-  {/* END: Vendor JS */}
-
-  {/* BEGIN: Page Vendor JS */}
-  <Script src="/app-assets/vendors/js/editors/quill/katex.min.js" strategy="afterInteractive" />
-  <Script src="/app-assets/vendors/js/editors/quill/highlight.min.js" strategy="afterInteractive" />
-  <Script src="/app-assets/vendors/js/editors/quill/quill.min.js" strategy="afterInteractive" />
-  <Script src="/app-assets/vendors/js/forms/select/select2.full.min.js" strategy="afterInteractive" />
-  <Script src="/app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js" strategy="afterInteractive" />
-  <Script src="/app-assets/vendors/js/extensions/dragula.min.js" strategy="afterInteractive" />
-  <Script src="/app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
-  <Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="afterInteractive" />
-  {/* END: Page Vendor JS */}
-
-  {/* BEGIN: Theme JS */}
-  <Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-  <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-  {/* END: Theme JS */}
-
-  {/* BEGIN: Page JS */}
-  <Script src="/app-assets/js/scripts/pages/app-todo.js" strategy="afterInteractive" />
     <div className="app-content content todo-application">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />

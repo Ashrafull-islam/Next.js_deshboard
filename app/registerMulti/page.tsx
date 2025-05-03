@@ -1,26 +1,6 @@
-"use client"
-
-import Script from "next/script"
-
 export default function page() {
   return (
     <>
-    {/* BEGIN: Vendor JS */}
-  <Script src="../../../app-assets/vendors/js/vendors.min.js" strategy="afterInteractive" />
-
-{/* BEGIN: Page Vendor JS */}
-<Script src="../../../app-assets/vendors/js/forms/wizard/bs-stepper.min.js" strategy="afterInteractive" />
-<Script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js" strategy="afterInteractive" />
-<Script src="../../../app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
-<Script src="../../../app-assets/vendors/js/forms/cleave/cleave.min.js" strategy="afterInteractive" />
-<Script src="../../../app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js" strategy="afterInteractive" />
-
-{/* BEGIN: Theme JS */}
-<Script src="../../../app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-<Script src="../../../app-assets/js/core/app.js" strategy="afterInteractive" />
-
-{/* BEGIN: Page JS */}
-<Script src="../../../app-assets/js/scripts/pages/auth-register.js" strategy="afterInteractive" />
     <div className="app-content content ">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -673,7 +653,7 @@ export default function page() {
                             id="addCardCvv"
                             className="form-control cvv-code-mask"
                             maxLength={3}
-                            placeholder={654}
+                            placeholder='654'
                           />
                         </div>
                       </div>

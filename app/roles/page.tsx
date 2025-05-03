@@ -1,30 +1,7 @@
-"use client"
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-     {/* Vendor JS */}
-     <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-{/* Page Vendor JS */}
-<Script src="/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/responsive.bootstrap5.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/buttons.bootstrap5.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
-
-{/* Theme JS */}
-<Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-<Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-{/* Page JS */}
-<Script src="/app-assets/js/scripts/pages/modal-add-role.js" strategy="afterInteractive" />
-<Script src="/app-assets/js/scripts/pages/app-access-roles.js" strategy="afterInteractive" />
-
     <div className="app-content content ">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -565,7 +542,7 @@ export default function page() {
                 <p>Set role permissions</p>
               </div>
               {/* Add role form */}
-              <form id="addRoleForm" className="row" onsubmit="return false">
+              <form id="addRoleForm" className="row" >
                 <div className="col-12">
                   <label className="form-label" htmlFor="modalRoleName">
                     Role Name

@@ -202,7 +202,7 @@ export default function page() {
                 <form
                   id="formChangePassword"
                   method="POST"
-                  onsubmit="return false"
+                  
                 >
                   <div className="alert alert-warning mb-2" role="alert">
                     <h6 className="alert-heading">
@@ -404,7 +404,7 @@ export default function page() {
               <form
                 id="editUserForm"
                 className="row gy-1 pt-75"
-                onsubmit="return false"
+                
               >
                 <div className="col-12 col-md-6">
                   <label
@@ -473,7 +473,7 @@ export default function page() {
                     className="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected="">Status</option>
+                    <option >Status</option>
                     <option value={1}>Active</option>
                     <option value={2}>Inactive</option>
                     <option value={3}>Suspended</option>
@@ -513,7 +513,7 @@ export default function page() {
                     id="modalEditUserLanguage"
                     name="modalEditUserLanguage"
                     className="select2 form-select"
-                    multiple=""
+                    
                   >
                     <option value="english">English</option>
                     <option value="spanish">Spanish</option>
@@ -570,7 +570,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="customSwitch10"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"
@@ -636,7 +636,7 @@ export default function page() {
               <form
                 id="upgradePlanForm"
                 className="row pt-50"
-                onsubmit="return false"
+                
               >
                 <div className="col-sm-8">
                   <label className="form-label" htmlFor="choosePlan">
@@ -648,7 +648,7 @@ export default function page() {
                     className="form-select"
                     aria-label="Choose Plan"
                   >
-                    <option selected="">Choose Plan</option>
+                    <option >Choose Plan</option>
                     <option value="standard">Standard - $99/month</option>
                     <option value="exclusive">Exclusive - $249/month</option>
                     <option value="Enterprise">Enterprise - $499/month</option>
@@ -717,7 +717,7 @@ export default function page() {
                   name="twoFactorAuthRadio"
                   id="twoFactorAuthApps"
                   defaultValue="apps-auth"
-                  defaultChecked=""
+                  defaultChecked={true}
                 />
                 <label
                   htmlFor="twoFactorAuthApps"
@@ -823,7 +823,7 @@ export default function page() {
                   on your app
                 </div>
               </div>
-              <form className="row gy-1" onsubmit="return false">
+              <form className="row gy-1" >
                 <div className="col-12">
                   <input
                     className="form-control"
@@ -879,7 +879,7 @@ export default function page() {
                 Enter your mobile phone number with country code and we will
                 send you a verification code.
               </p>
-              <form className="row gy-1 mt-1" onsubmit="return false">
+              <form className="row gy-1 mt-1" >
                 <div className="col-12">
                   <input
                     className="form-control phone-number-mask"

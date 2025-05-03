@@ -480,7 +480,7 @@ export default function page() {
               <form
                 id="editUserForm"
                 className="row gy-1 pt-75"
-                onsubmit="return false"
+                
               >
                 <div className="col-12 col-md-6">
                   <label
@@ -549,7 +549,7 @@ export default function page() {
                     className="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected="">Status</option>
+                    <option >Status</option>
                     <option value={1}>Active</option>
                     <option value={2}>Inactive</option>
                     <option value={3}>Suspended</option>
@@ -589,7 +589,7 @@ export default function page() {
                     id="modalEditUserLanguage"
                     name="modalEditUserLanguage"
                     className="select2 form-select"
-                    multiple=""
+                    
                   >
                     <option value="english">English</option>
                     <option value="spanish">Spanish</option>
@@ -646,7 +646,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="customSwitch10"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"
@@ -712,7 +712,7 @@ export default function page() {
               <form
                 id="upgradePlanForm"
                 className="row pt-50"
-                onsubmit="return false"
+                
               >
                 <div className="col-sm-8">
                   <label className="form-label" htmlFor="choosePlan">
@@ -724,7 +724,7 @@ export default function page() {
                     className="form-select"
                     aria-label="Choose Plan"
                   >
-                    <option selected="">Choose Plan</option>
+                    <option >Choose Plan</option>
                     <option value="standard">Standard - $99/month</option>
                     <option value="exclusive">Exclusive - $249/month</option>
                     <option value="Enterprise">Enterprise - $499/month</option>
@@ -786,7 +786,7 @@ export default function page() {
               <form
                 id="editCardValidation"
                 className="row gy-1 gx-2 mt-75"
-                onsubmit="return false"
+                
               >
                 <div className="col-12">
                   <label className="form-label" htmlFor="modalEditCardNumber">
@@ -845,7 +845,7 @@ export default function page() {
                     id="modalEditCardCvv"
                     className="form-control cvv-code-mask"
                     maxLength={3}
-                    placeholder={654}
+                    placeholder="102s"
                   />
                 </div>
                 <div className="col-12">
@@ -855,7 +855,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="editSaveCard"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"
@@ -923,7 +923,7 @@ export default function page() {
               <form
                 id="addNewCardValidation"
                 className="row gy-1 gx-2 mt-75"
-                onsubmit="return false"
+                
               >
                 <div className="col-12">
                   <label className="form-label" htmlFor="modalAddCardNumber">
@@ -981,7 +981,7 @@ export default function page() {
                     id="modalAddCardCvv"
                     className="form-control add-cvv-code-mask"
                     maxLength={3}
-                    placeholder={654}
+                    placeholder='654'
                   />
                 </div>
                 <div className="col-12">
@@ -991,7 +991,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="saveCard"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="saveCard">
                         <span className="switch-icon-left">
@@ -1060,7 +1060,7 @@ export default function page() {
               <form
                 id="addNewAddressForm"
                 className="row gy-1 gx-2"
-                onsubmit="return false"
+                
               >
                 <div className="col-12">
                   <div className="row custom-options-checkable">
@@ -1071,7 +1071,7 @@ export default function page() {
                         type="radio"
                         name="newAddress"
                         defaultValue="HomeAddress"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         htmlFor="homeAddressRadio"
@@ -1240,7 +1240,7 @@ export default function page() {
                     id="modalAddressZipCode"
                     name="modalAddressZipCode"
                     className="form-control"
-                    placeholder={99950}
+                    placeholder='99950'
                   />
                 </div>
                 <div className="col-12">
@@ -1250,7 +1250,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="useAsBillingAddress"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"

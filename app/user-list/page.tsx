@@ -1,35 +1,7 @@
-"use client"
-import Script from "next/script";
+
 export default function page() {
   return (
     <>
-    {/* Vendor JS */}
-    <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-{/* Page Vendor JS */}
-<Script src="/app-assets/vendors/js/forms/select/select2.full.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/responsive.bootstrap5.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/jszip.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/pdfmake.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/vfs_fonts.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/buttons.html5.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/buttons.print.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/forms/cleave/cleave.min.js" strategy="afterInteractive" />
-<Script src="/app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js" strategy="afterInteractive" />
-
-{/* Theme JS */}
-<Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-<Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-{/* Page JS */}
-<Script src="/app-assets/js/scripts/pages/app-user-list.js" strategy="afterInteractive" />
-
 
     <div className="app-content content ">
   <div className="content-overlay" />

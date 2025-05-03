@@ -1,29 +1,8 @@
-"use client";
-import Script from "next/script";
+
 export default function page() {
   return (
     <>
-      {/* Vendor JS */}
-      <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-      {/* Page Vendor JS */}
-      <Script src="/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js" strategy="afterInteractive" />
-      <Script src="/app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js" strategy="afterInteractive" />
-      <Script src="/app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js" strategy="afterInteractive" />
-      <Script src="/app-assets/vendors/js/tables/datatable/responsive.bootstrap5.js" strategy="afterInteractive" />
-      <Script src="/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js" strategy="afterInteractive" />
-      <Script src="/app-assets/vendors/js/tables/datatable/buttons.bootstrap5.min.js" strategy="afterInteractive" />
-      <Script src="/app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
-
-      {/* Theme JS */}
-      <Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-      <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-      {/* Page JS */}
-      <Script src="/app-assets/js/scripts/pages/modal-add-permission.js" strategy="afterInteractive" />
-      <Script src="/app-assets/js/scripts/pages/modal-edit-permission.js" strategy="afterInteractive" />
-      <Script src="/app-assets/js/scripts/pages/app-access-permission.js" strategy="afterInteractive" />
-
+      
       {/* Content */}
       <div className="app-content content ">
         <div className="content-overlay" />
@@ -79,7 +58,7 @@ export default function page() {
                     <form
                       id="addPermissionForm"
                       className="row"
-                      onsubmit="return false"
+                      // onsubmit="return false"
                     >
                       <div className="col-12">
                         <label
@@ -94,7 +73,7 @@ export default function page() {
                           name="modalPermissionName"
                           className="form-control"
                           placeholder="Permission Name"
-                          autofocus=""
+                          
                           data-msg="Please enter permission name"
                         />
                       </div>
@@ -169,7 +148,6 @@ export default function page() {
                     <form
                       id="editPermissionForm"
                       className="row"
-                      onsubmit="return false"
                     >
                       <div className="col-sm-9">
                         <label

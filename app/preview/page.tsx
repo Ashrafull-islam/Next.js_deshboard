@@ -1,4 +1,3 @@
-import Script from "next/script";
 
 export default function page() {
   return (
@@ -441,7 +440,7 @@ export default function page() {
                     className="form-control"
                     type="text"
                     defaultValue="Invoice Balance: 5000.00"
-                    disabled=""
+                    disabled={true}
                   />
                 </div>
                 <div className="mb-1">
@@ -470,7 +469,7 @@ export default function page() {
                     Payment Method
                   </label>
                   <select className="form-select" id="payment-method">
-                    <option value="" selected="" disabled="">
+                    <option  disabled={true}>
                       Select payment method
                     </option>
                     <option value="Cash">Cash</option>

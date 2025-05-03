@@ -1,27 +1,7 @@
-"use client"
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-    {/* Vendor JS */}
-    <Script src="/app-assets/vendors/js/vendors.min.js" strategy="beforeInteractive" />
-
-    {/* Page Vendor JS */}
-    <Script src="/app-assets/vendors/js/forms/select/select2.full.min.js" strategy="afterInteractive" />
-    <Script src="/app-assets/vendors/js/forms/cleave/cleave.min.js" strategy="afterInteractive" />
-    <Script src="/app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js" strategy="afterInteractive" />
-    <Script src="/app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
-    <Script src="/app-assets/vendors/js/extensions/sweetalert2.all.min.js" strategy="afterInteractive" />
-    <Script src="/app-assets/vendors/js/extensions/polyfill.min.js" strategy="afterInteractive" />
-
-    {/* Theme JS */}
-    <Script src="/app-assets/js/core/app-menu.js" strategy="afterInteractive" />
-    <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-    {/* Page JS */}
-    <Script src="/app-assets/js/scripts/pages/modal-edit-user.js" strategy="afterInteractive" />
-    <Script src="/app-assets/js/scripts/pages/app-user-view.js" strategy="afterInteractive" />
         <div className="app-content content ">
   <div className="content-overlay" />
   <div className="header-navbar-shadow" />
@@ -243,7 +223,7 @@ export default function page() {
                             className="form-check-input"
                             type="checkbox"
                             id="defaultCheck1"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                         </div>
                       </td>
@@ -283,7 +263,7 @@ export default function page() {
                             className="form-check-input"
                             type="checkbox"
                             id="defaultCheck5"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                         </div>
                       </td>
@@ -293,7 +273,7 @@ export default function page() {
                             className="form-check-input"
                             type="checkbox"
                             id="defaultCheck6"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                         </div>
                       </td>
@@ -308,7 +288,7 @@ export default function page() {
                             className="form-check-input"
                             type="checkbox"
                             id="defaultCheck7"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                         </div>
                       </td>
@@ -318,7 +298,7 @@ export default function page() {
                             className="form-check-input"
                             type="checkbox"
                             id="defaultCheck8"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                         </div>
                       </td>
@@ -328,7 +308,7 @@ export default function page() {
                             className="form-check-input"
                             type="checkbox"
                             id="defaultCheck9"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                         </div>
                       </td>
@@ -350,7 +330,7 @@ export default function page() {
                             className="form-check-input"
                             type="checkbox"
                             id="defaultCheck11"
-                            defaultChecked=""
+                            defaultChecked={true}
                           />
                         </div>
                       </td>
@@ -406,7 +386,7 @@ export default function page() {
               <form
                 id="editUserForm"
                 className="row gy-1 pt-75"
-                onsubmit="return false"
+                
               >
                 <div className="col-12 col-md-6">
                   <label
@@ -475,7 +455,7 @@ export default function page() {
                     className="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected="">Status</option>
+                    <option >Status</option>
                     <option value={1}>Active</option>
                     <option value={2}>Inactive</option>
                     <option value={3}>Suspended</option>
@@ -515,7 +495,7 @@ export default function page() {
                     id="modalEditUserLanguage"
                     name="modalEditUserLanguage"
                     className="select2 form-select"
-                    multiple=""
+                    
                   >
                     <option value="english">English</option>
                     <option value="spanish">Spanish</option>
@@ -572,7 +552,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="customSwitch10"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"
@@ -638,7 +618,7 @@ export default function page() {
               <form
                 id="upgradePlanForm"
                 className="row pt-50"
-                onsubmit="return false"
+                
               >
                 <div className="col-sm-8">
                   <label className="form-label" htmlFor="choosePlan">
@@ -650,7 +630,7 @@ export default function page() {
                     className="form-select"
                     aria-label="Choose Plan"
                   >
-                    <option selected="">Choose Plan</option>
+                    <option >Choose Plan</option>
                     <option value="standard">Standard - $99/month</option>
                     <option value="exclusive">Exclusive - $249/month</option>
                     <option value="Enterprise">Enterprise - $499/month</option>

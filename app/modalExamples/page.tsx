@@ -874,9 +874,7 @@ export default function page() {
               {/* form */}
               <form
                 id="addNewCardValidation"
-                className="row gy-1 gx-2 mt-75"
-                onsubmit="return false"
-              >
+                className="row gy-1 gx-2 mt-75"              >
                 <div className="col-12">
                   <label className="form-label" htmlFor="modalAddCardNumber">
                     Card Number
@@ -933,7 +931,7 @@ export default function page() {
                     id="modalAddCardCvv"
                     className="form-control add-cvv-code-mask"
                     maxLength={3}
-                    placeholder={654}
+                    placeholder='654'
                   />
                 </div>
                 <div className="col-12">
@@ -943,7 +941,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="saveCard"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label className="form-check-label" htmlFor="saveCard">
                         <span className="switch-icon-left">
@@ -1290,7 +1288,7 @@ export default function page() {
               <hr />
               <div className="px-sm-5 mx-50">
                 <h4 className="fw-bolder mt-5 mb-1">Invite your friends</h4>
-                <form className="row g-1" onsubmit="return false">
+                <form className="row g-1" >
                   <div className="col-lg-10">
                     <label className="form-label" htmlFor="modalRnFEmail">
                       Enter your friend’s email address and invite them to join
@@ -1311,7 +1309,7 @@ export default function page() {
                   </div>
                 </form>
                 <h4 className="fw-bolder mt-4 mb-1">Share the referral link</h4>
-                <form className="row g-1" onsubmit="return false">
+                <form className="row g-1" >
                   <div className="col-lg-9">
                     <label className="form-label" htmlFor="modalRnFLink">
                       You can also copy and send it or share it on your social
@@ -1392,9 +1390,7 @@ export default function page() {
               </p>
               <form
                 id="addNewAddressForm"
-                className="row gy-1 gx-2"
-                onsubmit="return false"
-              >
+                className="row gy-1 gx-2"              >
                 <div className="col-12">
                   <div className="row custom-options-checkable">
                     <div className="col-md-6 mb-md-0 mb-2">
@@ -1404,7 +1400,7 @@ export default function page() {
                         type="radio"
                         name="newAddress"
                         defaultValue="HomeAddress"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         htmlFor="homeAddressRadio"
@@ -1573,7 +1569,7 @@ export default function page() {
                     id="modalAddressZipCode"
                     name="modalAddressZipCode"
                     className="form-control"
-                    placeholder={99950}
+                    placeholder='99950'
                   />
                 </div>
                 <div className="col-12">
@@ -1583,7 +1579,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="useAsBillingAddress"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"
@@ -1814,7 +1810,7 @@ export default function page() {
                                 id="createAppEcommerce"
                                 type="radio"
                                 name="categoryRadio"
-                                defaultChecked=""
+                                defaultChecked={true}
                               />
                             </span>
                           </span>
@@ -1850,7 +1846,7 @@ export default function page() {
                     <div className="d-flex justify-content-between mt-2">
                       <button
                         className="btn btn-outline-secondary btn-prev"
-                        disabled=""
+                        disabled={true}
                       >
                         <i
                           data-feather="arrow-left"
@@ -1934,7 +1930,7 @@ export default function page() {
                                 id="createAppAngular"
                                 type="radio"
                                 name="frameworkRadio"
-                                defaultChecked=""
+                                defaultChecked={true}
                               />
                             </span>
                           </span>
@@ -2090,7 +2086,7 @@ export default function page() {
                                 id="createAppDynamoDB"
                                 type="radio"
                                 name="databaseRadio"
-                                defaultChecked=""
+                                defaultChecked={true}
                               />
                             </span>
                           </span>
@@ -2159,8 +2155,7 @@ export default function page() {
                     <form
                       id="createAppBillingForm"
                       className="row gy-1 gx-2"
-                      onsubmit="return false"
-                    >
+                        >
                       <div className="col-12">
                         <label
                           className="form-label"
@@ -2220,7 +2215,7 @@ export default function page() {
                           id="cvvBilling"
                           className="form-control create-app-cvv-code-mask"
                           maxLength={3}
-                          placeholder={654}
+                          placeholder='654'
                         />
                       </div>
                       <div className="col-12">
@@ -2230,7 +2225,7 @@ export default function page() {
                               type="checkbox"
                               className="form-check-input"
                               id="saveCardBilling"
-                              defaultChecked=""
+                              defaultChecked={true}
                             />
                             <label
                               className="form-check-label"
@@ -2349,7 +2344,7 @@ export default function page() {
                   name="twoFactorAuthRadio"
                   id="twoFactorAuthApps"
                   defaultValue="apps-auth"
-                  defaultChecked=""
+                  defaultChecked={true}
                 />
                 <label
                   htmlFor="twoFactorAuthApps"
@@ -2455,7 +2450,7 @@ export default function page() {
                   on your app
                 </div>
               </div>
-              <form className="row gy-1" onsubmit="return false">
+              <form className="row gy-1" >
                 <div className="col-12">
                   <input
                     className="form-control"
@@ -2511,7 +2506,7 @@ export default function page() {
                 Enter your mobile phone number with country code and we will
                 send you a verification code.
               </p>
-              <form className="row gy-1 mt-1" onsubmit="return false">
+              <form className="row gy-1 mt-1" >
                 <div className="col-12">
                   <input
                     className="form-control phone-number-mask"
@@ -2563,9 +2558,7 @@ export default function page() {
               </div>
               <form
                 id="editUserForm"
-                className="row gy-1 pt-75"
-                onsubmit="return false"
-              >
+                className="row gy-1 pt-75"              >
                 <div className="col-12 col-md-6">
                   <label
                     className="form-label"
@@ -2633,7 +2626,7 @@ export default function page() {
                     className="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected="">Status</option>
+                    <option >Status</option>
                     <option value={1}>Active</option>
                     <option value={2}>Inactive</option>
                     <option value={3}>Suspended</option>
@@ -2673,7 +2666,7 @@ export default function page() {
                     id="modalEditUserLanguage"
                     name="modalEditUserLanguage"
                     className="select2 form-select"
-                    multiple=""
+                    multiple={true}
                   >
                     <option value="english">English</option>
                     <option value="spanish">Spanish</option>
@@ -2730,7 +2723,7 @@ export default function page() {
                         type="checkbox"
                         className="form-check-input"
                         id="customSwitch10"
-                        defaultChecked=""
+                        defaultChecked={true}
                       />
                       <label
                         className="form-check-label"

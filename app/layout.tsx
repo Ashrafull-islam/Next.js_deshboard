@@ -42,11 +42,11 @@ export default function RootLayout({
             src="/app-assets/vendors/js/extensions/toastr.min.js"
             strategy="afterInteractive"
           />
-        <Script src="../../../app-assets/js/scripts/pages/auth-forgot-password.js" strategy="afterInteractive" />
-        <Script
-        src="../../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"
+                <Script
+        src="/app-assets/js/scripts/components/components-tooltips.js"
         strategy="afterInteractive"
       />
+        <Script src="../../../app-assets/js/scripts/pages/auth-forgot-password.js" strategy="afterInteractive" />
       <Script
         src="/app-assets/js/scripts/forms/form-tooltip-valid.js"
         strategy="afterInteractive"
@@ -55,6 +55,25 @@ export default function RootLayout({
         src="/app-assets/js/scripts/forms/form-repeater.js"
         strategy="afterInteractive"
       />
+   <Script
+        src="/app-assets/vendors/js/extensions/jstree.min.js"
+        strategy="afterInteractive"
+      />
+      <Script src="../../../app-assets/js/scripts/pages/auth-two-steps.js" strategy="afterInteractive" />
+      <Script
+        src="../../../app-assets/vendors/js/forms/cleave/cleave.min.js"
+        strategy="afterInteractive"
+      />
+      <Script src="/app-assets/js/scripts/pages/app-user-view-account.js" strategy="afterInteractive" />
+<Script src="/app-assets/js/scripts/pages/app-user-view.js" strategy="afterInteractive" />
+
+<Script
+        src="/app-assets/js/scripts/extensions/ext-component-tree.js"
+        strategy="afterInteractive"
+      />
+      <Script src="/app-assets/js/scripts/pages/app-user-list.js" strategy="afterInteractive" />
+
+
       <Script
         src="/app-assets/js/scripts/forms/form-select2.js"
         strategy="afterInteractive"
@@ -63,7 +82,14 @@ export default function RootLayout({
         src="/app-assets/js/scripts/forms/form-validation.js"
         strategy="afterInteractive"
       />
-
+      <Script
+        src="/app-assets/vendors/js/extensions/tether.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/app-assets/vendors/js/extensions/shepherd.min.js"
+        strategy="afterInteractive"
+      />
           <Script
             src="/app-assets/vendors/js/extensions/moment.min.js"
             strategy="afterInteractive"
@@ -72,6 +98,17 @@ export default function RootLayout({
         src="/app-assets/js/scripts/forms/form-file-uploader.js"
         strategy="afterInteractive"
       />
+            <Script
+        src="/app-assets/js/scripts/extensions/ext-component-tour.js"
+        strategy="afterInteractive"
+      />
+            <Script src="/app-assets/vendors/js/forms/validation/jquery.validate.min.js" strategy="afterInteractive" />
+            <Script
+        src="/app-assets/js/scripts/extensions/ext-component-toastr.js"
+        strategy="afterInteractive"
+      />
+
+
           <Script
             src="/app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"
             strategy="afterInteractive"
@@ -185,6 +222,7 @@ export default function RootLayout({
         strategy="afterInteractive"
       />
 <Script src="/app-assets/js/scripts/components/components-dropdowns.js" strategy="lazyOnload" />
+<Script src="/app-assets/js/scripts/pages/app-ecommerce.js" strategy="afterInteractive" />
 
           <Script src="/app-assets/js/scripts/forms/pickers/form-pickers.js" strategy="afterInteractive" />
           <Script src="/app-assets/js/scripts/pages/app-ecommerce-details.js" strategy="afterInteractive" />
@@ -194,6 +232,8 @@ export default function RootLayout({
         src="../../../app-assets/vendors/js/editors/quill/highlight.min.js"
         strategy="afterInteractive"
       />
+            <Script src="/app-assets/js/scripts/components/components-bs-toast.js" strategy="afterInteractive" />
+
           <Script
             src="/app-assets/js/core/app.js"
             strategy="afterInteractive"
@@ -211,10 +251,21 @@ export default function RootLayout({
             src="/app-assets/js/scripts/pages/app-invoice.js"
             strategy="afterInteractive"
           />
+          <Script src="/app-assets/js/scripts/pages/modal-add-role.js" strategy="afterInteractive" />
+<Script src="/app-assets/js/scripts/pages/app-access-roles.js" strategy="afterInteractive" />
+<Script
+        src="/app-assets/js/scripts/extensions/ext-component-ratings.js"
+        strategy="afterInteractive"
+      />
+        <Script src="/app-assets/js/scripts/pages/app-todo.js" strategy="afterInteractive" />
+
           <Script
             src="/app-assets/js/scripts/components/components-accordion.js"
             strategy="lazyOnload"
           />
+           <Script src="/app-assets/js/scripts/pages/modal-add-permission.js" strategy="afterInteractive" />
+      <Script src="/app-assets/js/scripts/pages/modal-edit-permission.js" strategy="afterInteractive" />
+      <Script src="/app-assets/js/scripts/pages/app-access-permission.js" strategy="afterInteractive" />
                 <Script
         src="../../../app-assets/js/scripts/pages/page-api-key.js"
         strategy="afterInteractive"
@@ -227,6 +278,16 @@ export default function RootLayout({
             src="/app-assets/js/scripts/pages/app-chat.js"
             strategy="afterInteractive"
           />
+      <Script
+        src="../../../app-assets/js/scripts/pages/page-pricing.js"
+        strategy="afterInteractive"
+      />
+<Script src="/app-assets/js/scripts/components/components-popovers.js" strategy="afterInteractive" />
+<Script src="/app-assets/vendors/js/extensions/wNumb.min.js" strategy="afterInteractive" />
+<Script src="/app-assets/vendors/js/extensions/nouislider.min.js" strategy="afterInteractive" />
+<Script src="/app-assets/vendors/js/extensions/toastr.min.js" strategy="afterInteractive" />
+<Script src="/app-assets/js/scripts/pages/app-ecommerce-wishlist.js" strategy="afterInteractive" />
+
           <Script src="/app-assets/vendors/js/maps/leaflet.min.js" strategy="afterInteractive" />
           <Script src="../../../app-assets/js/scripts/pages/modal-add-new-cc.js" strategy="afterInteractive" />
 <Script src="../../../app-assets/js/scripts/pages/page-pricing.js" strategy="afterInteractive" />
@@ -247,11 +308,21 @@ export default function RootLayout({
         src="../../../app-assets/vendors/js/charts/apexcharts.min.js"
         strategy="lazyOnload"
       />
+            <Script
+        src="/app-assets/js/scripts/extensions/ext-component-sweet-alerts.js"
+        strategy="afterInteractive"
+      />
+            <Script
+        src="/app-assets/js/scripts/extensions/ext-component-sliders.js"
+        strategy="afterInteractive"
+      />
       <Script src="/app-assets/js/scripts/maps/map-leaflet.js" strategy="afterInteractive" />
       <Script
         src="/app-assets/vendors/js/extensions/plyr.min.js"
         strategy="afterInteractive"
       />
+      <Script src="/app-assets/vendors/js/extensions/polyfill.min.js" strategy="afterInteractive" />
+
       <Script
         src="/app-assets/vendors/js/extensions/plyr.polyfilled.min.js"
         strategy="afterInteractive"
@@ -275,12 +346,42 @@ export default function RootLayout({
         src="/app-assets/js/scripts/charts/chart-apex.js"
         strategy="afterInteractive"
       />
+      <Script src="../../../app-assets/js/scripts/pages/auth-register.js" strategy="afterInteractive" />
+
+            <Script src="/app-assets/js/scripts/forms/form-quill-editor.js" strategy="afterInteractive" />
+
+
+<Script
+        src="/app-assets/js/scripts/forms/form-number-input.js"
+        strategy="afterInteractive"
+      />
+            <Script
+        src="/app-assets/js/scripts/components/components-navs.js"
+        strategy="afterInteractive"
+      />
+            <Script
+        src="/app-assets/vendors/js/pagination/jquery.bootpag.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="/app-assets/vendors/js/pagination/jquery.twbsPagination.min.js"
+        strategy="afterInteractive"
+      />
+            <Script
+        src="/app-assets/js/scripts/pagination/components-pagination.js"
+        strategy="afterInteractive"
+      />
       <Script src="/app-assets/vendors/js/forms/wizard/bs-stepper.min.js" strategy="afterInteractive" />
 
            <Script
         src="../../../app-assets/js/scripts/cards/card-analytics.js"
         strategy="lazyOnload"
       />
+      <Script src="/app-assets/js/scripts/components/components-modals.js" strategy="afterInteractive" />
+
+
+
+
       <Script src="/app-assets/js/scripts/pages/app-ecommerce-checkout.js" strategy="afterInteractive" />
 
        <Script src="/app-assets/js/scripts/pages/app-calendar-events.js" strategy="afterInteractive" />

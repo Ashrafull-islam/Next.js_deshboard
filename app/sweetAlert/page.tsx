@@ -1,38 +1,8 @@
-"use client";
-
-import Script from "next/script";
 
 export default function page() {
   return (
     <>
-      {/* BEGIN: Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/vendors.min.js"
-        strategy="beforeInteractive"
-      />
 
-      {/* BEGIN: Page Vendor JS */}
-      <Script
-        src="/app-assets/vendors/js/extensions/sweetalert2.all.min.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="/app-assets/vendors/js/extensions/polyfill.min.js"
-        strategy="afterInteractive"
-      />
-
-      {/* BEGIN: Theme JS */}
-      <Script
-        src="/app-assets/js/core/app-menu.js"
-        strategy="afterInteractive"
-      />
-      <Script src="/app-assets/js/core/app.js" strategy="afterInteractive" />
-
-      {/* BEGIN: Page JS */}
-      <Script
-        src="/app-assets/js/scripts/extensions/ext-component-sweet-alerts.js"
-        strategy="afterInteractive"
-      />
       <div className="app-content content ">
         <div className="content-overlay" />
         <div className="header-navbar-shadow" />
